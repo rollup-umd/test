@@ -1,3 +1,11 @@
+## [1.0.4](https://github.com/rollup-umd/test/compare/v1.0.3...v1.0.4) (2019-04-01)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([dceef3d](https://github.com/rollup-umd/test/commit/dceef3d))
+* **test:** fix test cmd ([a2c5dfd](https://github.com/rollup-umd/test/commit/a2c5dfd))
+
 ## [1.0.3](https://github.com/rollup-umd/test/compare/v1.0.2...v1.0.3) (2019-04-01)
 
 
