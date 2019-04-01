@@ -52,8 +52,7 @@ jobs:
         sonarcloud:
           organization: $(echo $TRAVIS_REPO_SLUG | awk -F '/' '{print $1}')
       script:
-        - npm run test
-        - if [[ "$TRAVIS_BRANCH" != greenkeeper* && -n "$SONAR_TOKEN" ]]; then sonar-scanner -Dsonar.projectVersion=${SONAR_VERSION}; fi
+        - ./src/test.sh
 
     # Job: Release
     - stage: release

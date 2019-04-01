@@ -15,6 +15,14 @@
       "content": "docs/installation.md"
     },
     {
+      "name": "Getting started",
+      "content": "docs/getting-started.md"
+    },
+    {
+      "name": "Configuration",
+      "content": "docs/configuration.md"
+    },
+    {
       "name": "JSdoc",
       "description": "This part is generated from the JSdoc annotations in the source code.",
       "content": "docs/js/jsdoc.md"
