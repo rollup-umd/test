@@ -4,5 +4,4 @@
 [![npm Version](https://img.shields.io/node/v/@rollup-umd/test.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/test)
 [![Module formats](https://img.shields.io/badge/module%20formats-umd%2C%20cjs%2C%20esm-green.svg?style=flat)](https://www.npmjs.com/package/@rollup-umd/test)
 
-
 $PACKAGE_DESCRIPTION
