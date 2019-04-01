@@ -57,9 +57,3 @@ if [[ $(which sonar-scanner) ]] && [[ ${sonar} = true ]] && [[ -f "${LCOV_INFO_P
     if [[ ${TRAVIS_BRANCH} != greenkeeper* && -n ${SONAR_TOKEN} ]]; then sonar-scanner -Dsonar.projectVersion=${SONAR_VERSION}; fi
   fi
 fi
-if [[ ${SONAR_VERSION} && ${SONAR_LOGIN} && ${CI_JOB_NAME} = test ]]; then
-  if [ -f "$LCOV_INFO_PATH" ]; then
-    sonar-scanner -Dsonar.host.url=${SONAR_URL} -Dsonar.login=${SONAR_LOGIN} -Dsonar.branch=${CI_COMMIT_REF_NAME} -Dsonar.projectVersion=${SONAR_VERSION}
-  fi
-fi
-
