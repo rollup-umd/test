@@ -1,45 +1,25 @@
+import path from 'path';
+const { spawn } = require('child_process'); // See https://github.com/calvinmetcalf/rollup-plugin-node-builtins/issues/50
+
 /**
- * Code your first module here
+ * @public
+ * Run test script from node
+ * @param yarn
+ * @param noSonar
+ * @param cb
  */
-
-export default class DemoClass {
-  static testStatic = 'This is a static test';
-
-  testAttribute = 'This is a test attribute';
-
-  state = {
-    list: ['a', 'b'],
-    isSpreadActive: true,
-    isTestLiving: true,
-  };
-
-  hasInList(value) {
-    return this.state.list.includes(value);
+export default function test({ yarn, noSonar }, cb) {
+  const args = [];
+  if (yarn) {
+    args.push('--yarn');
   }
-
-  getReplacedEnv() {
-    return process.env.NODE_ENV;
+  if (noSonar) {
+    args.push('--no-sonar');
   }
-
-  getIsSpreadActive() {
-    const { isSpreadActive, ...rest } = this.state; // eslint-disable-line no-unused-vars
-    return isSpreadActive;
-  }
-
-  getRest() {
-    const { isSpreadActive, ...rest } = this.state;
-    return rest;
-  }
-
-  getTestStatic() {
-    return DemoClass.testStatic;
-  }
-
-  getTestAttribute() {
-    return this.testAttribute;
-  }
-
-  setTestAttribute(testAttribute) {
-    this.testAttribute = testAttribute;
-  }
+  const ls = spawn('bash', [path.join(__dirname, 'test.sh')].concat(args), { stdio: 'inherit' });
+  ls.on('close', (code) => {
+    if (cb) {
+      cb(null, code);
+    }
+  });
 }
