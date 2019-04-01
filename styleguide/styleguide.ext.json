@@ -11,22 +11,8 @@
       "content": "docs/introduction.md"
     },
     {
-      "name": "Prerequisite",
-      "content": "docs/prerequisite.md"
-    },
-    {
-      "name": "Getting started",
-      "content": "docs/getting-started.md",
-      "sections": [
-        {
-          "name": "Installation",
-          "content": "docs/installation.md"
-        },
-        {
-          "name": "Configuration",
-          "content": "docs/configuration.md"
-        }
-      ]
+      "name": "Installation",
+      "content": "docs/installation.md"
     },
     {
       "name": "JSdoc",
