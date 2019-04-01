@@ -52,7 +52,7 @@
     "yeutech.vn",
     "test"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": "airbnb-base",
