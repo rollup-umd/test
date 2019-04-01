@@ -1,6 +1,6 @@
 {
   "name": "@yeutech/test",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test job script for rollup-umd-project",
   "main": "lib/index.js",
   "bin": "lib/cli/index.js",
@@ -38,7 +38,8 @@
     "jsdoc": "jsdoc-documentation --file",
     "prestyleguide": "npm run jsdoc",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "postinstall": "node -e \"console.log('\\u001b[31m@yeutech/test is deprecated, use @rollup-umd/test instead.')\" || exit 0"
   },
   "repository": {
     "type": "git",
