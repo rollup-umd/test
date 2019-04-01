@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/rollup-umd/test/compare/v1.0.1...v1.0.2) (2019-04-01)
+
+
+### Bug Fixes
+
+* **release:** GitHub release https://github.com/rollup-umd/test ([91a26c9](https://github.com/rollup-umd/test/commit/91a26c9))
+
 ## [1.0.1](https://module.kopaxgroup.com/rollup-umd/test/compare/v1.0.0...v1.0.1) (2019-04-01)
 
 
