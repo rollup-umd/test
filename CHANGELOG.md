@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/rollup-umd/test/compare/v1.0.2...v1.0.3) (2019-04-01)
+
+
+### Bug Fixes
+
+* **documentation:** improve documentation ([5bc027e](https://github.com/rollup-umd/test/commit/5bc027e))
+* **test:** testing the script with itself ([20f1761](https://github.com/rollup-umd/test/commit/20f1761))
+
 ## [1.0.2](https://github.com/rollup-umd/test/compare/v1.0.1...v1.0.2) (2019-04-01)
 
 
