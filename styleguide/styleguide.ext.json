@@ -45,5 +45,9 @@
       "name": "Code of conduct",
       "content": "CODE_OF_CONDUCT.md"
     }
-  ]
+  ],
+  "ribbon": {
+    "url": "https://github.com/rollup-umd/test",
+    "text": "Fork us on GitHub"
+  }
 }
