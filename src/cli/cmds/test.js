@@ -8,4 +8,11 @@ export const builder = (yargs) => yargs
   });
 export const command = ['*', 'test'];
 export const desc = 'Run test jobs';
-export const handler = (argv) => test(argv);
+export const handler = (argv) => () => {
+  test(argv, (err, code) => {
+    if (code !== 0) {
+      console.log(`ps process exited with code ${code}`);
+      process.exitCode = code;
+    }
+  });
+};
