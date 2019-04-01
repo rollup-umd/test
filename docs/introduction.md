@@ -8,3 +8,30 @@
 ![image]($IMG_SHIELD_PUBLISHING)
 
 $PACKAGE_DESCRIPTION
+
+## Sonarcloud 
+
+On GitHub projects, we push our test coverage to [sonarcloud](https://sonarcloud.io/), it can be set up in a Travis job.
+
+Within `.travis.yml`:
+
+```yml
+- stage: test
+  node_js:
+    - 'lts/*'
+    - '10'
+    - '8'
+  addons:
+    sonarcloud:
+      organization: $(echo $TRAVIS_REPO_SLUG | awk -F '/' '{print $1}')
+  script:
+    - npx $PACKAGE_NAME
+```
+
+- `organization` is required, we use the travis repo namespace (`$(echo $TRAVIS_REPO_SLUG | awk -F '/' '{print $1}')` will set it).
+
+### Environment 
+
+`LCOV_INFO_PATH`: path of lcov test result file (default: `coverage/lcov.info`). 
+
+We use [`jest`](https://jestjs.io/) and [`jest-sonar-reporter`](https://www.npmjs.com/package/jest-sonar-reporter) to create one.

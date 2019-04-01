@@ -48,11 +48,18 @@ fi
 npm test
 
 # Sonar scanner
-if [[ $(which sonar-scanner) ]] && [[ ${sonar} = "true" ]]; then
+LCOV_INFO_PATH=${LCOV_INFO_PATH:-"coverage/lcov.info"}
+
+if [[ $(which sonar-scanner) ]] && [[ ${sonar} = true ]] && [[ -f "${LCOV_INFO_PATH}" ]]; then
   # Travis will use sonar cloud for OSS
   if [[ -v TRAVIS_BUILD_ID ]]; then
     SONAR_VERSION=${PACKAGE_VERSION}-b${TRAVIS_BUILD_ID}-${TRAVIS_BRANCH}
     if [[ ${TRAVIS_BRANCH} != greenkeeper* && -n ${SONAR_TOKEN} ]]; then sonar-scanner -Dsonar.projectVersion=${SONAR_VERSION}; fi
+  fi
+fi
+if [[ ${SONAR_VERSION} && ${SONAR_LOGIN} && ${CI_JOB_NAME} = test ]]; then
+  if [ -f "$LCOV_INFO_PATH" ]; then
+    sonar-scanner -Dsonar.host.url=${SONAR_URL} -Dsonar.login=${SONAR_LOGIN} -Dsonar.branch=${CI_COMMIT_REF_NAME} -Dsonar.projectVersion=${SONAR_VERSION}
   fi
 fi
 
