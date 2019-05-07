@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/rollup-umd/test/compare/v1.0.4...v1.0.5) (2019-05-07)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([cfd1244](https://github.com/rollup-umd/test/commit/cfd1244))
+
 ## [1.0.4](https://github.com/rollup-umd/test/compare/v1.0.3...v1.0.4) (2019-04-01)
 
 
