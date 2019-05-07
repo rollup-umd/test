@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+[ -v DEBUG ] && set -x
+
 set -e
 
 PACKAGE_VERSION=$(node -p "require('./package.json').version")
