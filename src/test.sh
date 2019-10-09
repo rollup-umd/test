@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-[ -v DEBUG ] && set -x
+[ -v CI_DEBUG ] && set -x
 
 set -e
 
