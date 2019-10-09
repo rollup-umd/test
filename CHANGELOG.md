@@ -1,3 +1,11 @@
+## [1.0.6](https://github.com/rollup-umd/test/compare/v1.0.5...v1.0.6) (2019-10-09)
+
+
+### Bug Fixes
+
+* **dependencies:** upgrade all dependencies ([26e2a27](https://github.com/rollup-umd/test/commit/26e2a272d92bf7caa7e49bf4fe206f6c778ddf19))
+* **environment:** rename DEBUG into CI_DEBUG ([3357693](https://github.com/rollup-umd/test/commit/33576930cbfce6e14343f6aeaba2edded45cf30a))
+
 ## [1.0.5](https://github.com/rollup-umd/test/compare/v1.0.4...v1.0.5) (2019-05-07)
 
 
