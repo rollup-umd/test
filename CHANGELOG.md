@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/rollup-umd/test/compare/v1.1.2...v1.1.3) (2020-04-25)
+
+
+### Bug Fixes
+
+* **name:** rename test to ci-test ([067c50c](https://github.com/rollup-umd/test/commit/067c50c0fba840a1b9d05aff5e6338a5bfe20772))
+
 ## [1.1.2](https://github.com/rollup-umd/test/compare/v1.1.1...v1.1.2) (2020-04-25)
 
 
