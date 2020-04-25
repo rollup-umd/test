@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/rollup-umd/test/compare/v1.1.0...v1.1.1) (2020-04-25)
+
+
+### Bug Fixes
+
+* **sonar:** now using --sonar=false to disable sonar ([783ba81](https://github.com/rollup-umd/test/commit/783ba81b2ac3f74560cbbd13ca053b440d5cd107))
+
 # [1.1.0](https://github.com/rollup-umd/test/compare/v1.0.6...v1.1.0) (2020-04-25)
 
 
