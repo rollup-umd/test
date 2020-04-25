@@ -14,15 +14,15 @@ function die() {
 # Initialize all the option variables.
 # This ensures we are not contaminated by variables from the environment.
 installer=npm
-sonar=true
+sonar=false
 
 while :; do
   case $1 in
     -y|--yarn)
       installer=yarn
       ;;
-    -n|--no-sonar)
-      sonar=false
+    -s|--sonar)
+      sonar=true
       ;;
     --)              # End of all options.
       shift
@@ -40,7 +40,7 @@ done
 
 if [[ ! -d node_modules ]]; then
   if [[ ${installer} = yarn ]]; then
-    echo "[Documentation] installing dependencies with ${installer}"
+    echo "Installing dependencies with ${installer}"
     [[ $(which yarn) = "" ]] && curl -o- -L https://yarnpkg.com/install.sh | bash
     yarn
   else

@@ -6,10 +6,10 @@ export const builder = (yargs) => yargs
     type: 'boolean',
     default: false,
   })
-  .option('no-sonar', {
-    describe: 'Skip sonar scan',
+  .option('sonar', {
+    describe: 'Enable sonar scan',
     type: 'boolean',
-    default: false,
+    default: true,
   });
 export const command = ['*', 'test'];
 export const desc = 'Run test jobs';

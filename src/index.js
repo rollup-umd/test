@@ -4,17 +4,17 @@ const { spawn } = require('child_process'); // See https://github.com/calvinmetc
 /**
  * @public
  * Run test script from node
- * @param yarn
+ * @param sonar
  * @param noSonar
  * @param cb
  */
-export default function test({ yarn, noSonar }, cb) {
+export default function test({ yarn, sonar }, cb) {
   const args = [];
   if (yarn) {
     args.push('--yarn');
   }
-  if (noSonar) {
-    args.push('--no-sonar');
+  if (sonar) {
+    args.push('--sonar');
   }
   const ls = spawn('bash', [path.join(__dirname, 'test.sh')].concat(args), { stdio: 'inherit' });
   ls.on('close', (code) => {
