@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/rollup-umd/test/compare/v1.1.1...v1.1.2) (2020-04-25)
+
+
+### Bug Fixes
+
+* **yarn:** fix yarn command ([4b65a94](https://github.com/rollup-umd/test/commit/4b65a94175ff0b379d7773f979b9c6101fc1f318))
+
 ## [1.1.1](https://github.com/rollup-umd/test/compare/v1.1.0...v1.1.1) (2020-04-25)
 
 
