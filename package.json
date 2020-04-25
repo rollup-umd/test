@@ -1,5 +1,5 @@
 {
-  "name": "@rollup-umd/test",
+  "name": "@rollup-umd/ci-test",
   "version": "1.0.2",
   "description": "Test job script for rollup-umd-project",
   "main": "lib/index.js",
