@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/rollup-umd/test/compare/v1.0.6...v1.1.0) (2020-04-25)
+
+
+### Features
+
+* **yarn:** added yarn build tool ([f3b0b6f](https://github.com/rollup-umd/test/commit/f3b0b6f61bada41b705c3bd2692d67535a3e9b29))
+
 ## [1.0.6](https://github.com/rollup-umd/test/compare/v1.0.5...v1.0.6) (2019-10-09)
 
 
